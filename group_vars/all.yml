@@ -1,0 +1,75 @@
+---
+# Role: Homebrew (geerlingguy.homebrew)
+# ----------------------------------------------------
+
+homebrew_taps:
+  - homebrew/binary
+
+homebrew_installed_packages:
+  - bash-completion
+  - git
+  - rar
+  - python
+  - automake
+  - libtool
+  - libuv
+  - docker
+
+homebrew_cask_apps:
+  # Sys
+  - totalspaces
+  - the-unarchiver
+  - java
+  - adobe-reader
+  - flash-player
+  - istat-menus
+  - filezilla
+  - renamer
+  - calibre
+  - daisydisk
+  - lastpass
+
+  # Movies
+  - plex-media-player
+  - vlc
+  - aegisub
+  - subsmarine
+
+  # Download
+  - transmission
+  - jdownloader
+
+  # Design
+  - invisionsync
+
+  # Music
+  - spotify
+
+  # Communication
+  - franz
+  - skype
+
+  # Cloud
+  - google-drive
+  - synology-cloud-station-drive
+
+  # Browsers
+  - google-chrome
+  - firefox
+
+  # Development
+  - iterm2
+  - virtualbox
+  - vagrant
+  - docker
+  - kitematic
+
+  # IDEs
+  - phpstorm
+  - atom
+  - macdown
+
+  # Database GUIs
+  - mysqlworkbench
+  - robomongo
+  - psequel

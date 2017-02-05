@@ -1,0 +1,12 @@
+---
+- name:
+  hosts: local
+  connection: local
+  become: yes
+  become_user: "{{ user }}"
+  vars:
+    user: nass600
+    home: "/Users/{{user}}"
+  roles:
+    - geerlingguy.homebrew
+    - geerlingguy.dotfiles

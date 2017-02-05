@@ -1,0 +1,68 @@
+#!/bin/sh
+
+# Clearing the terminal
+clear
+
+MACOS_SETUP_DIRECTORY="${HOME}/.osx-setup"
+MACOS_SETUP_TARBALL_PATH="https://github.com/nass600/osx-setup/tarball/master"
+MACOS_SETUP_GIT_REMOTE="git@github.com:nass600/osx-setup.git"
+
+# Download and extract the dotfiles repository
+if [[ -d ${MACOS_SETUP_DIRECTORY} ]]; then
+    rm -Rf ${MACOS_SETUP_DIRECTORY}
+fi
+
+printf "$(tput setaf 5)Downloading osx-setup...\033[m\n"
+mkdir ${MACOS_SETUP_DIRECTORY}
+# Get the tarball
+curl -fsSLo ${HOME}/dotfiles.tar.gz ${MACOS_SETUP_TARBALL_PATH}
+# Extract to the dotfiles directory
+tar -zxf ${HOME}/dotfiles.tar.gz --strip-components 1 -C ${MACOS_SETUP_DIRECTORY}
+# Remove the tarball
+rm -rf ${HOME}/dotfiles.tar.gz
+
+cd ${MACOS_SETUP_DIRECTORY}
+
+# include utils
+source ./lib/utils
+
+# Ask for the administrator password upfront
+e_header "Please, enter your admin password"
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `osx` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# Install xcode terminal tools
+if ! type_exists 'gcc'; then
+    e_header "Installing Xcode command tools"
+    xcode-select --install
+
+    # Ask before potentially overwriting OS X defaults
+    seek_confirmation "Is Xcode already installed?"
+
+    if is_confirmed; then
+        e_success "Resuming installation.\n"
+    else
+        printf "Skipped installation.\n"
+    fi
+fi
+
+# Check for Homebrew
+if ! type_exists 'brew'; then
+    e_header "Installing Brew"
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    brew update
+    brew upgrade
+fi
+
+# Check for ansible
+if ! type_exists 'ansible'; then
+    e_header "Installing ansible"
+    brew install ansible
+fi
+
+# Installing packages via Ansible
+e_header "Running Ansible provisioning"
+ansible-galaxy install -r requirements.yml
+ansible-playbook setup.yml
