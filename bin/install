@@ -3,16 +3,16 @@
 # Clearing the terminal
 clear
 
-MACOS_SETUP_DIRECTORY="${HOME}/.osx-setup"
-MACOS_SETUP_TARBALL_PATH="https://github.com/nass600/osx-setup/tarball/master"
-MACOS_SETUP_GIT_REMOTE="git@github.com:nass600/osx-setup.git"
+MACOS_SETUP_DIRECTORY="${HOME}/.macos-setup"
+MACOS_SETUP_TARBALL_PATH="https://github.com/nass600/macos-setup/tarball/master"
+MACOS_SETUP_GIT_REMOTE="git@github.com:nass600/macos-setup.git"
 
 # Download and extract the dotfiles repository
 if [[ -d ${MACOS_SETUP_DIRECTORY} ]]; then
     rm -Rf ${MACOS_SETUP_DIRECTORY}
 fi
 
-printf "$(tput setaf 5)Downloading osx-setup...\033[m\n"
+printf "$(tput setaf 5)Downloading macos-setup...\033[m\n"
 mkdir ${MACOS_SETUP_DIRECTORY}
 # Get the tarball
 curl -fsSLo ${HOME}/dotfiles.tar.gz ${MACOS_SETUP_TARBALL_PATH}
