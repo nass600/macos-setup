@@ -7,11 +7,11 @@ dotfiles_repo_local_destination: "~/.dotfiles"
 dotfiles_files:
   - .bash_profile
   - .bash_aliases
-  - .bashrc
   - .config
   - .gitignore
   - .gitconfig
   - .vimrc
+  - .dir_colors
 
 # Role: Homebrew (geerlingguy.homebrew)
 # ----------------------------------------------------
@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - libtool
   - libuv
   - docker
+  - coreutils
 
 homebrew_cask_apps:
   # Sys
