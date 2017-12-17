@@ -65,4 +65,4 @@ fi
 # Installing packages via Ansible
 e_header "Running Ansible provisioning"
 ansible-galaxy install -r requirements.yml
-ansible-playbook setup.yml
+ansible-playbook main.yml -K

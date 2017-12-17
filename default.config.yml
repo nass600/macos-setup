@@ -1,7 +1,9 @@
 ---
-# Role: Dotfiles (geerlingguy.dotfiles)
-# ----------------------------------------------------
+downloads: ~/.ansible-downloads/
 
+configure_dotfiles: yes
+
+# Role: Dotfiles (geerlingguy.dotfiles)
 dotfiles_repo: "https://github.com/nass600/dotfiles.git"
 dotfiles_repo_local_destination: "~/.dotfiles"
 dotfiles_files:
@@ -14,11 +16,6 @@ dotfiles_files:
   - .dir_colors
 
 # Role: Homebrew (geerlingguy.homebrew)
-# ----------------------------------------------------
-
-homebrew_taps:
-  - homebrew/binary
-
 homebrew_installed_packages:
   - bash-completion
   - git
@@ -29,7 +26,14 @@ homebrew_installed_packages:
   - libuv
   - docker
   - coreutils
+  - wget
+  - htop
 
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+
+homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   # Sys
   - totalspaces
@@ -84,7 +88,7 @@ homebrew_cask_apps:
   - atom
   - macdown
 
-  # Database GUIs
-  - mysqlworkbench
-  - robomongo
-  - psequel
+# Role: Mac App Store CLI (geerlingguy.mas)
+mas_installed_apps: []
+mas_email: ""
+mas_password: ""
