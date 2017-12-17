@@ -38,7 +38,7 @@ homebrew_cask_apps:
   - adobe-reader
   - flash-player
   - istat-menus
-  - filezilla
+  - transmit
   - renamer
   - calibre
   - daisydisk
@@ -65,7 +65,6 @@ homebrew_cask_apps:
   - skype
 
   # Cloud
-  - google-drive
   - synology-cloud-station-drive
 
   # Browsers
@@ -80,6 +79,7 @@ homebrew_cask_apps:
   - kitematic
 
   # IDEs
+  - visual-studio-code
   - phpstorm
   - atom
   - macdown
