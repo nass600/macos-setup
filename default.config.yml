@@ -6,6 +6,7 @@ configure_dotfiles: yes
 # Role: Dotfiles (geerlingguy.dotfiles)
 dotfiles_repo: "https://github.com/nass600/dotfiles.git"
 dotfiles_repo_local_destination: "~/.dotfiles"
+dotfiles_home: "~"
 dotfiles_files:
   - .bash_profile
   - .bash_aliases
