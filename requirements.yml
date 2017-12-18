@@ -1,4 +1,6 @@
 ---
 - name: geerlingguy.dotfiles
 - name: geerlingguy.homebrew
+- name: nass600.vundle
+- name: nass600.powerline
 - name: geerlingguy.mas

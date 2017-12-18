@@ -3,6 +3,14 @@ downloads: ~/.ansible-downloads/
 
 configure_dotfiles: yes
 
+# Role: Powerline (nass600.powerline)
+vundle_user: "{{ user }}"
+
+# Role: Powerline (nass600.powerline)
+powerline_config_shell_colorscheme: "blue"
+powerline_config_shell_theme: "default_leftonly"
+powerline_daemon_destination: "~/.bash_profile"
+
 # Role: Dotfiles (geerlingguy.dotfiles)
 dotfiles_repo: "https://github.com/nass600/dotfiles.git"
 dotfiles_repo_local_destination: "~/.dotfiles"
