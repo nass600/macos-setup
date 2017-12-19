@@ -1,10 +1,10 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_dotfiles: yes
+configure_dotfiles: true
 
 # Role: Powerline (nass600.powerline)
-vundle_user: "{{ user }}"
+vundle_user: "{{ ansible_user_id }}"
 
 # Role: Powerline (nass600.powerline)
 powerline_config_shell_colorscheme: "blue"
@@ -37,6 +37,7 @@ homebrew_installed_packages:
   - coreutils
   - wget
   - htop
+  - mas
 
 homebrew_taps:
   - homebrew/core
@@ -98,6 +99,11 @@ homebrew_cask_apps:
   - macdown
 
 # Role: Mac App Store CLI (geerlingguy.mas)
-mas_installed_apps: []
-mas_email: ""
-mas_password: ""
+mas_signin_dialog: true
+mas_email: "Your email"
+mas_installed_apps:
+  - {id: 497799835, name: "Xcode"}
+  - {id: 926036361, name: "LastPass Password Manager"}
+  - {id: 411643860, name: "DaisyDisk"}
+  - {id: 417375580, name: "BetterSnapTool"}
+  - {id: 409183694, name: "Keynote"}

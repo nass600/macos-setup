@@ -1,4 +1,4 @@
-# macos-setup
+#  macOS setup
 
 One-click setup for a freshly installed macOS via Ansible
 
@@ -15,6 +15,13 @@ One-click setup for a freshly installed macOS via Ansible
   ```bash
   sh <(curl -L https://raw.github.com/nass600/macos-setup/master/bin/install)
   ```
+
+Will install:
+
++ App Store applications
++ Brew packages
++ Brew Casks
++ Powerline and vundle (terminal)
 
 ## License
 
