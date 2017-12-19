@@ -59,7 +59,7 @@ fi
 # Check for ansible
 if ! type_exists 'ansible'; then
     e_header "Installing ansible"
-    brew install ansible
+    brew install ansible ansible-lint
 fi
 
 # Installing packages via Ansible
