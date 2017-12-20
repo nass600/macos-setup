@@ -6,23 +6,24 @@
     - default.config.yml
 
   pre_tasks:
-    - include_vars: "{{ item }}"
+    - name: Include variables
+      include_vars: "{{ item }}"
       with_fileglob:
         - ../config.yml
       tags: ['always']
-  
+
   roles:
     - role: geerlingguy.homebrew
-      tags: ['homebrew']
-    - role: geerlingguy.dotfiles
-      when: configure_dotfiles
-      tags: ['dotfiles']
-    - role: nass600.powerline
-      when: configure_dotfiles
-      tags: ['dotfiles']
-    - role: nass600.vundle
-      when: configure_dotfiles
-      tags: ['dotfiles']
+      tags: ['apps', 'brew', 'skip_ansible_lint']
     - role: geerlingguy.mas
       when: mas_installed_apps
-      tags: ['mas']
+      tags: ['apps', 'mas', 'skip_ansible_lint']
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles', 'skip_ansible_lint']
+    - role: nass600.powerline
+      when: configure_dotfiles
+      tags: ['dotfiles', 'skip_ansible_lint']
+    - role: nass600.vundle
+      when: configure_dotfiles
+      tags: ['dotfiles', 'skip_ansible_lint']
