@@ -42,6 +42,7 @@ homebrew_installed_packages:
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
+  - caskroom/drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -49,7 +50,7 @@ homebrew_cask_apps:
   - totalspaces
   - the-unarchiver
   - java
-  - adobe-reader
+  - adobe-acrobat-reader
   - flash-player
   - istat-menus
   - transmit

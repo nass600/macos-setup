@@ -35,7 +35,7 @@ script:
   - ansible-lint main.yml
 
   # Test the playbook.
-  - "travis_wait 30 ansible-playbook main.yml"
+  - "ansible-playbook main.yml"
 
   # Test the playbook's idempotence.
   - idempotence=$(mktemp)
