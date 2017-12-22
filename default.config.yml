@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - wget
   - htop
   - mas
+  - {name: macvim, install_options: "with-override-system-vim"}
 
 homebrew_taps:
   - homebrew/core
@@ -107,3 +108,4 @@ mas_installed_apps:
   - {id: 411643860, name: "DaisyDisk"}
   - {id: 417375580, name: "BetterSnapTool"}
   - {id: 409183694, name: "Keynote"}
+  

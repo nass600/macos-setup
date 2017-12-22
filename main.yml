@@ -11,6 +11,10 @@
       with_fileglob:
         - ../config.yml
       tags: ['always']
+    - name: Configure macOS settings
+      command: "bin/osx-settings"
+      changed_when: false
+      tags: ['always']
 
   roles:
     - role: geerlingguy.homebrew
