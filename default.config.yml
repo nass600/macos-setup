@@ -53,7 +53,7 @@ homebrew_cask_apps:
   - java
   - adobe-acrobat-reader
   - flash-player
-  - istat-menus
+  - https://raw.githubusercontent.com/caskroom/homebrew-cask/3a68e11fa578e36fe4745d761a6082b0b158391b/Casks/istat-menus.rb
   - transmit
   - renamer
   - calibre
@@ -98,6 +98,9 @@ homebrew_cask_apps:
   - phpstorm
   - atom
   - macdown
+
+  # Drivers
+  - logitech-options
 
 # Role: Mac App Store CLI (geerlingguy.mas)
 mas_signin_dialog: true

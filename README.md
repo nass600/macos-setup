@@ -26,6 +26,7 @@ Will install:
 + Brew packages
 + Brew Casks
 + Powerline and vundle (terminal)
++ macOS preferences
 
 ## License
 

@@ -12,7 +12,7 @@
         - ../config.yml
       tags: ['always']
     - name: Configure macOS settings
-      command: "bin/osx-settings"
+      shell: "bin/osx-settings"
       changed_when: false
       tags: ['always']
 
