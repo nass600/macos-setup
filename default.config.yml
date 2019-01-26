@@ -64,6 +64,8 @@ homebrew_cask_apps:
   - vlc
   - aegisub
   - subsmarine
+  - subler
+  - mkvtoolnix-app
 
   # Download
   - transmission
