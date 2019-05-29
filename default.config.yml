@@ -38,6 +38,7 @@ homebrew_installed_packages:
   - wget
   - htop
   - mas
+  - nvm
   - {name: macvim, install_options: "with-override-system-vim"}
 
 homebrew_taps:
