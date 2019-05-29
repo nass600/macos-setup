@@ -48,7 +48,6 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   # Sys
-  - totalspaces
   - the-unarchiver
   - java
   - adobe-acrobat-reader
@@ -56,7 +55,6 @@ homebrew_cask_apps:
   - https://raw.githubusercontent.com/caskroom/homebrew-cask/3a68e11fa578e36fe4745d761a6082b0b158391b/Casks/istat-menus.rb
   - transmit
   - renamer
-  - calibre
   - lastpass
 
   # Movies
@@ -65,14 +63,11 @@ homebrew_cask_apps:
   - aegisub
   - subsmarine
   - subler
-  - mkvtoolnix-app
+  - mkvtoolnix
 
   # Download
   - transmission
   - jdownloader
-
-  # Design
-  - invisionsync
 
   # Music
   - spotify
@@ -91,7 +86,6 @@ homebrew_cask_apps:
   # Development
   - iterm2
   - virtualbox
-  - vagrant
   - docker
   - kitematic
 
@@ -108,9 +102,8 @@ homebrew_cask_apps:
 mas_signin_dialog: true
 mas_email: "Your email"
 mas_installed_apps:
-  - {id: 497799835, name: "Xcode"}
-  - {id: 926036361, name: "LastPass Password Manager"}
   - {id: 411643860, name: "DaisyDisk"}
   - {id: 417375580, name: "BetterSnapTool"}
   - {id: 409183694, name: "Keynote"}
+  - {id: 876111075, name: "Subtitle Extractor"}
   
