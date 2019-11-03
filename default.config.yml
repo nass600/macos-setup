@@ -43,8 +43,7 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - homebrew/core
-  - caskroom/cask
-  - caskroom/drivers
+  - omebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -56,7 +55,7 @@ homebrew_cask_apps:
   - https://raw.githubusercontent.com/caskroom/homebrew-cask/3a68e11fa578e36fe4745d761a6082b0b158391b/Casks/istat-menus.rb
   - transmit
   - renamer
-  - lastpass
+  - 1password
 
   # Movies
   - plex-media-player
@@ -77,9 +76,6 @@ homebrew_cask_apps:
   - franz
   - skype
 
-  # Cloud
-  - synology-cloud-station-drive
-
   # Browsers
   - google-chrome
   - firefox
@@ -98,6 +94,7 @@ homebrew_cask_apps:
 
   # Drivers
   - logitech-options
+  - monitorcontrol
 
 # Role: Mac App Store CLI (geerlingguy.mas)
 mas_signin_dialog: true
