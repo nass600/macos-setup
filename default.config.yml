@@ -29,7 +29,6 @@ homebrew_upgrade_all_packages: true
 homebrew_installed_packages:
   - bash-completion
   - git
-  - python
   - automake
   - libtool
   - libuv
@@ -39,11 +38,10 @@ homebrew_installed_packages:
   - htop
   - mas
   - nvm
-  - {name: macvim, install_options: "with-override-system-vim"}
 
 homebrew_taps:
   - homebrew/core
-  - omebrew/cask-drivers
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -100,4 +98,5 @@ mas_installed_apps:
   - {id: 411643860, name: "DaisyDisk"}
   - {id: 417375580, name: "BetterSnapTool"}
   - {id: 876111075, name: "Subtitle Extractor"}
+  - {id: 975937182, name: "Fantastical - Calendar & Tasks"}
   
