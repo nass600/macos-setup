@@ -58,7 +58,7 @@ homebrew_cask_apps:
   - 1password
 
   # Movies
-  - plex-media-player
+  - plex
   - vlc
   - aegisub
   - subsmarine
@@ -82,15 +82,12 @@ homebrew_cask_apps:
 
   # Development
   - iterm2
-  - virtualbox
   - docker
   - kitematic
 
   # IDEs
   - visual-studio-code
-  - phpstorm
   - atom
-  - macdown
 
   # Drivers
   - logitech-options
@@ -102,6 +99,5 @@ mas_email: "Your email"
 mas_installed_apps:
   - {id: 411643860, name: "DaisyDisk"}
   - {id: 417375580, name: "BetterSnapTool"}
-  - {id: 409183694, name: "Keynote"}
   - {id: 876111075, name: "Subtitle Extractor"}
   
