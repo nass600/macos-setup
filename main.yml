@@ -27,9 +27,9 @@
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles', 'skip_ansible_lint']
-    - role: nass600.powerline
-      when: configure_dotfiles
-      tags: ['dotfiles', 'skip_ansible_lint']
-    - role: nass600.vundle
-      when: configure_dotfiles
-      tags: ['dotfiles', 'skip_ansible_lint']
+    # - role: nass600.powerline
+    #   when: configure_dotfiles
+    #   tags: ['dotfiles', 'skip_ansible_lint']
+    # - role: nass600.vundle
+    #   when: configure_dotfiles
+    #   tags: ['dotfiles', 'skip_ansible_lint']
