@@ -124,6 +124,8 @@ zsh_powerlevel9k_vcs_clean_background: ~
 zsh_powerlevel9k_vcs_modified_background: ~
 zsh_powerlevel9k_vcs_untracked_background: ~
 
+zsh_fzf_path: "$HOME/.fzf/bin"
+
 # Role: Mac App Store CLI (geerlingguy.mas)
 mas_signin_dialog: true
 mas_email: "Your email"
