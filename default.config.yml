@@ -51,7 +51,7 @@ homebrew_cask_apps:
   - plex
   - vlc
   - aegisub
-  - subsmarine
+  # - subsmarine
   - subler
   - mkvtoolnix
 
@@ -84,7 +84,7 @@ homebrew_cask_apps:
   - monitorcontrol
 
   # Fonts
-  - font-meslo-nerd-font
+  - font-meslolg-nerd-font
   - font-maven-pro
 
 # Role: ZSH (viasite-ansible.zsh)
