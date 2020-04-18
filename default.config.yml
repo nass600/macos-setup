@@ -85,7 +85,7 @@ homebrew_cask_apps:
 
   # Fonts
   - font-meslolg-nerd-font
-  - font-maven-pro
+  # - font-maven-pro
 
 # Role: ZSH (viasite-ansible.zsh)
 zsh_antigen_bundles:
