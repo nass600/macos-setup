@@ -11,7 +11,7 @@ dotfiles_files:
   - .gitignore
   - .gitconfig
   - .vimrc
-  - .zshrc
+  - .zshrc.local
 
 # Role: Homebrew (geerlingguy.homebrew)
 homebrew_upgrade_all_packages: true
