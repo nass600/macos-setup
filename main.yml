@@ -11,6 +11,8 @@
       with_fileglob:
         - ../config.yml
       tags: ['always']
+  
+  post_tasks:
     - name: Configure macOS settings
       shell: "bin/osx-settings"
       changed_when: false
