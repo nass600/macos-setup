@@ -34,15 +34,16 @@ homebrew_taps:
   - homebrew/core
   - homebrew/cask-drivers
   - homebrew/cask-fonts
+  - homebrew/cask-versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   # Sys
   - the-unarchiver
-  - java
+  - adoptopenjdk8 # java
   - adobe-acrobat-reader
   - flash-player
-  - https://raw.githubusercontent.com/caskroom/homebrew-cask/3a68e11fa578e36fe4745d761a6082b0b158391b/Casks/istat-menus.rb
+  - https://raw.githubusercontent.com/caskroom/homebrew-cask/3a68e11fa578e36fe4745d761a6082b0b158391b/Casks/istat-menus.rb # istat-menus 5
   - transmit
   - renamer
   - 1password
@@ -86,6 +87,9 @@ homebrew_cask_apps:
   # Fonts
   - font-meslolg-nerd-font
   # - font-maven-pro
+
+  # macOS
+  - mysides
 
 # Role: ZSH (viasite-ansible.zsh)
 zsh_antigen_bundles:
