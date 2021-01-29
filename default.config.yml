@@ -43,7 +43,7 @@ homebrew_cask_apps:
   - adoptopenjdk8 # java
   - adobe-acrobat-reader
   - flash-player
-  - https://raw.githubusercontent.com/caskroom/homebrew-cask/3a68e11fa578e36fe4745d761a6082b0b158391b/Casks/istat-menus.rb # istat-menus 5
+  - istat-menus
   - transmit
   - renamer
   - 1password
@@ -52,7 +52,6 @@ homebrew_cask_apps:
   - plex
   - vlc
   - aegisub
-  # - subsmarine
   - subler
   - mkvtoolnix
 
@@ -74,7 +73,6 @@ homebrew_cask_apps:
   # Development
   - iterm2
   - docker
-  - kitematic
 
   # IDEs
   - visual-studio-code
@@ -85,11 +83,14 @@ homebrew_cask_apps:
   - monitorcontrol
 
   # Fonts
-  - font-meslolg-nerd-font
-  # - font-maven-pro
+  - font-meslo-lg-nerd-font
+  - font-maven-pro
 
   # macOS
   - mysides
+
+  # Productivity
+  - notion
 
 # Role: ZSH (viasite-ansible.zsh)
 zsh_antigen_bundles:
@@ -103,17 +104,26 @@ zsh_antigen_bundles:
   - osx
   - joel-porquet/zsh-dircolors-solarized
   - { name: systemd, command: systemctl }
-  - { name: zsh-users/zsh-autosuggestions, when: "{{ zsh_version is version_compare('5.0', '>=') }}" }
-  - { name: unixorn/autoupdate-antigen.zshplugin, when: "{{ zsh_update_interval > 0 }}" }
+  - {
+      name: zsh-users/zsh-autosuggestions,
+      when: "{{ zsh_version is version_compare('5.0', '>=') }}",
+    }
+  - {
+      name: unixorn/autoupdate-antigen.zshplugin,
+      when: "{{ zsh_update_interval > 0 }}",
+    }
   - urbainvaes/fzf-marks # replaces jump plugin, mark, jump and Ctrl+G
   - "{{ fzf_widgets }}"
-  - { name: zdharma/fast-syntax-highlighting@v1.2, when: "{{ zsh_version is version_compare('4.3.17', '>=') }}" }
+  - {
+      name: zdharma/fast-syntax-highlighting@v1.2,
+      when: "{{ zsh_version is version_compare('4.3.17', '>=') }}",
+    }
 
 zsh_aliases: []
 
 zsh_powerlevel9k_left_prompt:
   - os_icon
-  - root_indicator 
+  - root_indicator
   - dir
 
 zsh_powerlevel9k_right_prompt:
@@ -134,9 +144,7 @@ zsh_fzf_path: "$HOME/.fzf/bin"
 mas_signin_dialog: true
 mas_email: "Your email"
 mas_installed_apps:
-  - {id: 411643860,  name: "DaisyDisk"}
-  - {id: 417375580,  name: "BetterSnapTool"}
-  - {id: 876111075,  name: "Subtitle Extractor"}
-  - {id: 975937182,  name: "Fantastical - Calendar & Tasks"}
-  - {id: 1091189122, name: "Bear"}
-  
+  - { id: 411643860, name: "DaisyDisk" }
+  - { id: 417375580, name: "BetterSnapTool" }
+  - { id: 876111075, name: "Subtitle Extractor" }
+  - { id: 975937182, name: "Fantastical - Calendar & Tasks" }
