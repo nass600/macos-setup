@@ -38,59 +38,38 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  # Sys
-  - the-unarchiver
-  - adoptopenjdk8 # java
-  - adobe-acrobat-reader
-  - flash-player
-  - istat-menus
-  - transmit
-  - renamer
   - 1password
-
-  # Movies
-  - plex
-  - vlc
+  - adobe-acrobat-reader
+  - adoptopenjdk8 # java
   - aegisub
-  - subler
-  - mkvtoolnix
-
-  # Download
-  - transmission
-  - jdownloader
-
-  # Music
-  - spotify
-
-  # Communication
-  - franz
-  - skype
-
-  # Browsers
-  - google-chrome
-  - firefox
-
-  # Development
-  - iterm2
-  - docker
-
-  # IDEs
-  - visual-studio-code
   - atom
-
-  # Drivers
-  - logitech-options
-  - monitorcontrol
-
-  # Fonts
+  - calibre
+  - docker
+  - firefox
+  - flash-player
   - font-meslo-lg-nerd-font
   - font-maven-pro
-
-  # macOS
+  - franz
+  - google-chrome
+  - istat-menus
+  - iterm2
+  - jdownloader
+  - logitech-options
+  - mkvtoolnix
+  - monitorcontrol
   - mysides
-
-  # Productivity
+  - namechanger
   - notion
+  - plex
+  - postman
+  - skype
+  - spotify
+  - subler
+  - the-unarchiver
+  - transmission
+  - transmit
+  - visual-studio-code
+  - vlc
 
 # Role: ZSH (viasite-ansible.zsh)
 zsh_antigen_bundles:
