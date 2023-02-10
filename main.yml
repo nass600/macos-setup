@@ -25,6 +25,7 @@
       when: configure_dotfiles
     - role: nass600.vundle
       when: configure_dotfiles
+      ignore_errors: true
     - role: diodonfrost.ohmyzsh
     - role: diodonfrost.p10k
     # - role: viasite-ansible.zsh
