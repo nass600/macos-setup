@@ -10,28 +10,20 @@
       include_vars: "{{ item }}"
       with_fileglob:
         - ../config.yml
-      tags: ['always']
-  
-  post_tasks:
-    - name: Configure macOS settings
-      shell: "bin/macos-settings"
-      changed_when: false
-      tags: ['always']
+
+  # post_tasks:
+  #   - name: Configure macOS settings
+  #     shell: "bin/macos-settings"
+  #     changed_when: false
 
   roles:
-    - role: geerlingguy.homebrew
-      tags: ['apps', 'brew', 'skip_ansible_lint']
-      ignore_errors: true
-    - role: geerlingguy.mas
-      when: mas_installed_apps
-      ignore_errors: true
-      tags: ['apps', 'mas', 'skip_ansible_lint']
+    - role: geerlingguy.mac.homebrew
+    - role: geerlingguy.mac.mas
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
-      tags: ['dotfiles', 'skip_ansible_lint']
     - role: nass600.vundle
       when: configure_dotfiles
-      tags: ['dotfiles', 'skip_ansible_lint']
-    - role: viasite-ansible.zsh
-      when: configure_dotfiles
-      tags: ['dotfiles', 'skip_ansible_lint']
+    - role: diodonfrost.ohmyzsh
+    - role: diodonfrost.p10k
+    # - role: viasite-ansible.zsh
+    #   when: configure_dotfiles

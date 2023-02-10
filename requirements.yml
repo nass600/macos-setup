@@ -1,7 +1,12 @@
 ---
-- name: geerlingguy.dotfiles
-- name: geerlingguy.homebrew
-- name: nass600.vundle
-- name: geerlingguy.mas
-- name: viasite-ansible.zsh
-  src: https://github.com/nass600/ansible-role-zsh
+roles:
+  - name: elliotweiser.osx-command-line-tools
+  - name: geerlingguy.dotfiles
+  - name: nass600.vundle
+  - name: diodonfrost.ohmyzsh
+  - name: diodonfrost.p10k
+  # - name: viasite-ansible.zsh
+  #   src: https://github.com/nass600/ansible-role-zsh
+
+collections:
+  - name: geerlingguy.mac
