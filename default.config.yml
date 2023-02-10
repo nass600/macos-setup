@@ -27,6 +27,7 @@ homebrew_installed_packages:
   - libtool
   - libuv
   - nvm
+  - openjdk
   - pyenv
   - wget
   - zsh-completions
@@ -40,7 +41,6 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - openjdk
   - aegisub
   - atom
   - docker
