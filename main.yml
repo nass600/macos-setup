@@ -18,7 +18,9 @@
 
   roles:
     - role: geerlingguy.mac.homebrew
+      ignore_errors: true
     - role: geerlingguy.mac.mas
+      ignore_errors: true
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
     - role: nass600.vundle
