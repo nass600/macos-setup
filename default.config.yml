@@ -76,9 +76,48 @@ mas_installed_apps:
   - { id: 876111075, name: "Subtitle Extractor" }
   - { id: 975937182, name: "Fantastical - Calendar & Tasks" }
 
-# Role: OhMyZsh (diodonfrost.ohmyzsh)
-ohmyzsh_theme: agnoster
-ohmyzsh_plugins:
+# # Role: OhMyZsh (diodonfrost.ohmyzsh)
+# ohmyzsh_theme: agnoster
+# ohmyzsh_plugins:
+#   - ansible
+#   - aws
+#   - brew
+#   - docker
+#   - docker-compose
+#   - emoji
+#   - git
+#   - git-extras
+#   - joel-porquet/zsh-dircolors-solarized
+#   - macos
+#   - npm
+#   - nvm
+#   - pip
+#   - poetry
+#   - python
+#   - pyenv
+#   - rsync
+#   - systemd
+#   - thefuck
+#   - themes
+#   - urbainvaes/fzf-marks
+#   - virtualenv
+#   - vscode
+#   - vundle
+#   - zdharma/fast-syntax-highlighting
+#   - zsh-autosuggestions
+
+# # Role: Powerline10k (diodonfrost.p10k)
+# zsh_plugin: ohmyzsh
+# p10k_prompt_style: classic
+# p10k_prompt_time: 24-hour
+# p10k_prompt_separator: angled
+# p10k_prompt_head: sharp
+# p10k_prompt_tails: flat
+# p10k_prompt_height: one-line
+
+
+# Role: ZSH (viasite-ansible.zsh)
+zsh_antigen_bundles:
   - ansible
   - aws
   - brew
@@ -106,60 +145,23 @@ ohmyzsh_plugins:
   - zdharma/fast-syntax-highlighting
   - zsh-autosuggestions
 
-# Role: Powerline10k (diodonfrost.p10k)
-zsh_plugin: ohmyzsh
-p10k_prompt_style: classic
-p10k_prompt_time: 24-hour
-p10k_prompt_separator: angled
-p10k_prompt_head: sharp
-p10k_prompt_tails: flat
-p10k_prompt_height: one-line
+zsh_aliases: []
 
+zsh_powerlevel9k_left_prompt:
+  - os_icon
+  - root_indicator
+  - dir
 
-# # Role: ZSH (viasite-ansible.zsh)
-# zsh_antigen_bundles:
-#   - { name: git, command: git }
-#   - { name: brew, command: brew }
-#   - { name: docker, command: docker }
-#   - { name: docker-compose, command: docker-compose }
-#   - git-extras
-#   - nvm
-#   - npm
-#   - osx
-#   - joel-porquet/zsh-dircolors-solarized
-#   - { name: systemd, command: systemctl }
-#   - {
-#       name: zsh-users/zsh-autosuggestions,
-#       when: "{{ zsh_version is version_compare('5.0', '>=') }}",
-#     }
-#   - {
-#       name: unixorn/autoupdate-antigen.zshplugin,
-#       when: "{{ zsh_update_interval > 0 }}",
-#     }
-#   - urbainvaes/fzf-marks # replaces jump plugin, mark, jump and Ctrl+G
-#   - "{{ fzf_widgets }}"
-#   - {
-#       name: zdharma/fast-syntax-highlighting@v1.2,
-#       when: "{{ zsh_version is version_compare('4.3.17', '>=') }}",
-#     }
+zsh_powerlevel9k_right_prompt:
+  - status
+  - vcs
+  - time
 
-# zsh_aliases: []
+zsh_powerlevel_custom_elements: []
+zsh_powerlevel9k_shorten_dir_length: 2
+zsh_powerlevel9k_vcs_foreground: ~
+zsh_powerlevel9k_vcs_clean_background: ~
+zsh_powerlevel9k_vcs_modified_background: ~
+zsh_powerlevel9k_vcs_untracked_background: ~
 
-# zsh_powerlevel9k_left_prompt:
-#   - os_icon
-#   - root_indicator
-#   - dir
-
-# zsh_powerlevel9k_right_prompt:
-#   - status
-#   - vcs
-#   - time
-
-# zsh_powerlevel_custom_elements: []
-# zsh_powerlevel9k_shorten_dir_length: 2
-# zsh_powerlevel9k_vcs_foreground: ~
-# zsh_powerlevel9k_vcs_clean_background: ~
-# zsh_powerlevel9k_vcs_modified_background: ~
-# zsh_powerlevel9k_vcs_untracked_background: ~
-
-# zsh_fzf_path: "$HOME/.fzf/bin"
+zsh_fzf_path: "$HOME/.fzf/bin"
