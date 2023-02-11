@@ -146,6 +146,7 @@ zsh_antigen_bundles:
   - zsh-autosuggestions
 
 zsh_aliases: []
+zsh_hotkeys: []
 
 zsh_powerlevel9k_left_prompt:
   - os_icon
