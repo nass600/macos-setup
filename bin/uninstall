@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd $HOME
+sudo rm -Rf \
+    .p10k.* \
+    .zshrc* \
+    .antigen* \
+    .git* \
+    .dotfiles \
+    .zprofile \
+    .zsh-highlighting-overlay.ini \
+    .vim* \
+    .macos-setup
