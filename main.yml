@@ -11,10 +11,14 @@
       with_fileglob:
         - ../config.yml
 
-  # post_tasks:
-  #   - name: Configure macOS settings
-  #     shell: "bin/macos-settings"
-  #     changed_when: false
+  tasks:
+    - name: Set macOS default settings
+      community.general.osx_defaults:
+        domain: "{{ item['domain'] }}"
+        key: "{{ item['key'] }}"
+        type: "{{ item['type'] | default(omit) }}"
+        value: "{{ item['value'] }}"
+      loop: "{{ macos_defaults }}"
 
   roles:
     - role: geerlingguy.mac.homebrew

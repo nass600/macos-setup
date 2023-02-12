@@ -7,4 +7,5 @@ roles:
     src: https://github.com/nass600/ansible-role-zsh
 
 collections:
+  - name: community.general
   - name: geerlingguy.mac
