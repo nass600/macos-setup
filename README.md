@@ -1,10 +1,7 @@
 #  macOS setup
 
-[![Build Status](https://travis-ci.org/nass600/macos-setup.svg?branch=master)](https://travis-ci.org/nass600/macos-setup)
-
-One-click setup for a freshly installed macOS via Ansible
-
-> Working in macOS 10.15 Catalina
+> One-click setup for a freshly installed macOS via Ansible
+> Working in macOS 13 Ventura
 
 ## Installation
 
