@@ -62,9 +62,7 @@ homebrew_installed_packages:
   - pyenv
   - tesseract-lang
   - wget
-  - zsh-users/zsh-completions
-  - zsh-syntax-highlighting
-  - zsh-users/zsh-autosuggestions
+  - zsh-completions
 
 homebrew_taps:
   - homebrew/core
@@ -138,7 +136,7 @@ zsh_antigen_bundles:
   - vscode
   - vundle
   - zdharma-continuum/fast-syntax-highlighting
-  - zsh-autosuggestions
+  - zsh-users/zsh-autosuggestions
 
 zsh_aliases:
   - { alias: 'ls', action: 'gls -GFh --color=always' }
