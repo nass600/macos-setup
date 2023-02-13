@@ -60,9 +60,11 @@ homebrew_installed_packages:
   - nvm
   - openjdk
   - pyenv
+  - tesseract-lang
   - wget
-  - zsh-completions
+  - zsh-users/zsh-completions
   - zsh-syntax-highlighting
+  - zsh-users/zsh-autosuggestions
 
 homebrew_taps:
   - homebrew/core
@@ -74,6 +76,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - aegisub
   - atom
+  - cleanmymac
   - docker
   - firefox
   - font-meslo-lg-nerd-font
