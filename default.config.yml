@@ -92,6 +92,7 @@ homebrew_cask_apps:
   - plex
   - postman
   - skype
+  - studio-3t
   - the-unarchiver
   - transmission
   - transmit
@@ -107,6 +108,7 @@ mas_installed_apps:
   - { id: 417375580, name: "BetterSnapTool" }
   - { id: 876111075, name: "Subtitle Extractor" }
   - { id: 975937182, name: "Fantastical - Calendar & Tasks" }
+  - { id: 953040671, name: "hide.me VPN" }
 
 
 # Role: ZSH (viasite-ansible.zsh)
@@ -135,8 +137,9 @@ zsh_antigen_bundles:
   - virtualenv
   - vscode
   - vundle
-  - zdharma-continuum/fast-syntax-highlighting
+  # - zdharma-continuum/fast-syntax-highlighting
   - zsh-users/zsh-autosuggestions
+  - zsh-users/zsh-syntax-highlighting
 
 zsh_aliases:
   - { alias: 'ls', action: 'gls -GFh --color=always' }
