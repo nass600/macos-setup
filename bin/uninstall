@@ -8,6 +8,5 @@ sudo rm -Rf \
     .git* \
     .dotfiles \
     .zprofile \
-    .zsh-highlighting-overlay.ini \
     .vim* \
     .macos-setup

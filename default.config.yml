@@ -41,7 +41,6 @@ dotfiles_files:
   - .p10k.zsh.local
   - .vimrc
   - .zprofile
-  - .zsh-highlighting-overlay.ini
   - .zshrc.local
 
 # Role: Homebrew (geerlingguy.homebrew)
@@ -62,7 +61,6 @@ homebrew_installed_packages:
   - pyenv
   - tesseract-lang
   - wget
-  - zsh-completions
 
 homebrew_taps:
   - homebrew/core
@@ -119,7 +117,6 @@ zsh_antigen_bundles:
   - docker
   - docker-compose
   - emoji
-  - "{{ fzf_widgets }}"
   - git
   - git-extras
   - joshjon/bliss-dircolors
@@ -133,11 +130,10 @@ zsh_antigen_bundles:
   - rsync
   - systemd
   - themes
-  - urbainvaes/fzf-marks
   - virtualenv
   - vscode
   - vundle
-  # - zdharma-continuum/fast-syntax-highlighting
+  - zsh-users/zsh-completions
   - zsh-users/zsh-autosuggestions
   - zsh-users/zsh-syntax-highlighting
 
