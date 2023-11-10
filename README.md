@@ -14,7 +14,7 @@ One-click setup for a freshly installed macOS via Ansible
 2. Run the installation script:
 
    ```bash
-   sh <(curl -L https://raw.github.com/nass600/macos-setup/master/bin/install)
+   sh <(curl -L https://raw.github.com/nass600/macos-setup/main/bin/install)
    ```
 
 The script will install:

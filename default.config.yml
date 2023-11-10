@@ -145,7 +145,7 @@ zsh_aliases:
   - { alias: 'fgrep', action: 'fgrep --color=always' }
   - { alias: 'egrep', action: 'egrep --color=always' }
   - { alias: 'doco', action: 'docker-compose' }
-  - { alias: 'gpf', action: 'git pull origin master --rebase && git fetch --tags' }
+  - { alias: 'gpf', action: 'git pull origin main --rebase && git fetch --tags' }
 
 zsh_powerlevel10k_instant_prompt: yes
 
