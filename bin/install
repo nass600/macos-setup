@@ -44,7 +44,7 @@ fi
 # Check for Homebrew
 if ! type_exists 'brew'; then
     e_header "Installing Brew"
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     brew update
     brew upgrade
 fi
