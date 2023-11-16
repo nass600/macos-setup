@@ -47,6 +47,7 @@ dotfiles_files:
 homebrew_upgrade_all_packages: true
 homebrew_installed_packages:
   - automake
+  - awscli
   - bat
   - coreutils
   - ffmpeg
@@ -56,6 +57,7 @@ homebrew_installed_packages:
   - htop
   - libtool
   - libuv
+  - mediainfo
   - nvm
   - openjdk
   - pyenv
@@ -74,6 +76,7 @@ homebrew_cask_apps:
   - atom
   - cleanmymac
   - docker
+  - elmedia-player
   - firefox
   - font-meslo-lg-nerd-font
   - font-maven-pro

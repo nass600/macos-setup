@@ -1,11 +1,11 @@
 #  macOS setup
 
-[![api](https://img.shields.io/badge/macos_13_(ventura)-white?style=for-the-badge&logo=apple&logoColor=black)]()
+[![api](https://img.shields.io/badge/macos_14_(sonoma)-white?style=for-the-badge&logo=apple&logoColor=black)]()
 [![GitHub tag](https://img.shields.io/github/tag/nass600/macos-setup.svg?style=for-the-badge&logo=github)]()
 
 One-click setup for a freshly installed macOS via Ansible
 
-> Working in **macOS 13 Ventura**
+> Working in **macOS 14 Sonoma**
 
 ## Installation
 
