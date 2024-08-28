@@ -146,11 +146,6 @@ homebrew_installed_packages:
   - tesseract-lang
   - wget
 
-homebrew_taps:
-  - homebrew/core
-  - homebrew/cask-fonts
-  - homebrew/cask-versions
-
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - aegisub
