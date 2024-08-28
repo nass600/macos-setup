@@ -130,6 +130,7 @@ homebrew_installed_packages:
   - awscli
   - bat
   - coreutils
+  - docker-compose
   - exiftool
   - ffmpeg
   - fzf
@@ -156,7 +157,6 @@ homebrew_cask_apps:
   - atom
   - cleanmymac
   - docker
-  - docker-compose
   - drivedx
   - elmedia-player
   - firefox
