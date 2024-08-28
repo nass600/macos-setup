@@ -134,6 +134,7 @@ homebrew_installed_packages:
   - exiftool
   - ffmpeg
   - fzf
+  - git
   - gnu-tar
   - htop
   - libtool
