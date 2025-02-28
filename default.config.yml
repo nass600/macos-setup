@@ -113,6 +113,7 @@ macos_defaults:
 
 # Role: Dotfiles (geerlingguy.dotfiles)
 dotfiles_repo: "https://github.com/nass600/dotfiles.git"
+dotfiles_repo_version: main
 dotfiles_repo_local_destination: "~/.dotfiles"
 dotfiles_home: "~"
 dotfiles_files:
