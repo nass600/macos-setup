@@ -124,6 +124,7 @@ dotfiles_files:
   - .zshrc.local
 
 # Role: Homebrew (geerlingguy.homebrew)
+homebrew_taps: []
 homebrew_upgrade_all_packages: true
 homebrew_installed_packages:
   - automake
@@ -149,7 +150,6 @@ homebrew_installed_packages:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - aegisub
-  - atom
   - betterdisplay
   - cleanmymac
   - docker
