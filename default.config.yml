@@ -150,6 +150,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - aegisub
   - atom
+  - betterdisplay
   - cleanmymac
   - docker
   - drivedx
@@ -162,19 +163,16 @@ homebrew_cask_apps:
   - istat-menus
   - iterm2
   - jdownloader
-  - logi-options-plus
+  - logi-options+
   - mkvtoolnix
-  - betterdisplay
   - namechanger
   - notion
   - plex
   - postman
-  - studio-3t
   - the-unarchiver
   - transmission
   - transmit
   - visual-studio-code
-  - vlc
   - zoom
 
 # Role: Mac App Store CLI (geerlingguy.mas)
