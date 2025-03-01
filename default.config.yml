@@ -190,6 +190,8 @@ mas_installed_apps:
 vundle_repo: "git@github.com:VundleVim/Vundle.vim"
 
 # Role: ZSH (viasite-ansible.zsh)
+zsh_antigen_repo: git@github.com:viasite-ansible/antigen
+zsh_antigen_version: develop
 zsh_antigen_bundles:
   - ansible
   - aws
