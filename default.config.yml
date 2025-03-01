@@ -159,7 +159,6 @@ homebrew_cask_apps:
   - firefox
   - font-meslo-lg-nerd-font
   - font-maven-pro
-  - franz
   - google-chrome
   - istat-menus
   - iterm2
@@ -174,6 +173,7 @@ homebrew_cask_apps:
   - transmission
   - transmit
   - visual-studio-code
+  - whatsapp
   - zoom
 
 # Role: Mac App Store CLI (geerlingguy.mas)
