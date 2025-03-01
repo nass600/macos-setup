@@ -186,6 +186,9 @@ mas_installed_apps:
   - { id: 975937182, name: "Fantastical - Calendar & Tasks" }
   - { id: 953040671, name: "hide.me VPN" }
 
+# Role: Vundle (nass600.vundle)
+vundle_repo: "git@github.com:VundleVim/Vundle.vim"
+
 # Role: ZSH (viasite-ansible.zsh)
 zsh_antigen_bundles:
   - ansible
