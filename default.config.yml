@@ -1,8 +1,7 @@
 ---
-downloads: ~/.ansible-downloads/
-
 configure_dotfiles: true
 configure_dock: false
+downloads: ~/.ansible-downloads/
 
 macos_defaults:
   # Interface
@@ -117,8 +116,8 @@ dotfiles_repo_version: main
 dotfiles_repo_local_destination: "~/.dotfiles"
 dotfiles_home: "~"
 dotfiles_files:
-  - .gitignore
   - .gitconfig
+  - .gitignore
   - .p10k.zsh.local
   - .vimrc
   - .zprofile
@@ -132,47 +131,54 @@ homebrew_installed_packages:
   - awscli
   - bat
   - coreutils
-  - docker-compose
   - exiftool
   - ffmpeg
   - fzf
+  - gh
   - git
   - gnu-tar
   - htop
   - libtool
   - libuv
-  - mediainfo
+  - media-info
   - nvm
   - openjdk
+  - pipx
   - pyenv
   - tesseract-lang
+  - uv
   - wget
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - 1password-cli
   - aegisub
   - betterdisplay
-  - cleanmymac
-  - docker
+  - claude-code
+  - cursor
+  - docker-desktop
   - drivedx
   - elmedia-player
   - firefox
-  - font-meslo-lg-nerd-font
   - font-maven-pro
+  - font-meslo-lg-nerd-font
   - google-chrome
   - istat-menus
   - iterm2
   - jdownloader
   - logi-options+
-  - mkvtoolnix
+  - makemkv
+  - mkvtoolnix-app
   - namechanger
   - notion
   - plex
   - postman
+  - rar
+  - raycast
+  - sublime-text
   - the-unarchiver
   - transmission
   - transmit
-  - visual-studio-code
   - whatsapp
   - zoom
 
@@ -180,11 +186,11 @@ homebrew_cask_apps:
 mas_signin_dialog: true
 mas_email: "Your email"
 mas_installed_apps:
-  - { id: 411643860, name: "DaisyDisk" }
   - { id: 417375580, name: "BetterSnapTool" }
-  - { id: 876111075, name: "Subtitle Extractor" }
+  - { id: 411643860, name: "DaisyDisk" }
   - { id: 975937182, name: "Fantastical - Calendar & Tasks" }
   - { id: 953040671, name: "hide.me VPN" }
+  - { id: 876111075, name: "Subtitle Extractor" }
 
 # Role: Vundle (nass600.vundle)
 vundle_repo: "git@github.com:VundleVim/Vundle.vim"
@@ -205,7 +211,7 @@ zsh_antigen_bundles:
   - npm
   - nvm
   - pip
-  - poetry
+  - pipx
   - python
   - pyenv
   - rsync
@@ -214,20 +220,20 @@ zsh_antigen_bundles:
   - virtualenv
   - vscode
   - vundle
-  - zsh-users/zsh-completions
   - zsh-users/zsh-autosuggestions
+  - zsh-users/zsh-completions
   - zsh-users/zsh-syntax-highlighting
 
 zsh_aliases:
-  - { alias: "ls", action: "gls -GFh --color=always" }
-  - { alias: "ll", action: "gls -alF --color=always" }
-  - { alias: "la", action: "gls -GA --color=always" }
-  - { alias: "grep", action: "grep --color=always" }
-  - { alias: "fgrep", action: "fgrep --color=always" }
+  - { alias: "doco", action: "docker compose" }
   - { alias: "egrep", action: "egrep --color=always" }
-  - { alias: "doco", action: "docker-compose" }
+  - { alias: "fgrep", action: "fgrep --color=always" }
+  - { alias: "grep", action: "grep --color=always" }
+  - { alias: "la", action: "gls -GA --color=always" }
+  - { alias: "ll", action: "gls -alF --color=always" }
+  - { alias: "ls", action: "gls -GFh --color=always" }
   - {
-      alias: "gpf",
+      alias: "main",
       action: "git pull origin main --rebase && git fetch --tags",
     }
 

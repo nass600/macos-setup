@@ -20,6 +20,14 @@
         value: "{{ item['value'] }}"
       loop: "{{ macos_defaults }}"
 
+    - name: Configure GitHub npm registry auth
+      ansible.builtin.lineinfile:
+        path: "~/.npmrc"
+        regexp: '^//npm\.pkg\.github\.com/:_authToken='
+        line: "//npm.pkg.github.com/:_authToken={{ lookup('pipe', '/opt/homebrew/bin/op read op://Personal/GH_NPM_REGISTRY/credential') }}"
+        create: true
+        mode: "0600"
+
   roles:
     - role: geerlingguy.mac.homebrew
       ignore_errors: true
