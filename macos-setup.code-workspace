@@ -28,7 +28,7 @@
       "titleBar.inactiveForeground": "#e7e7e799",
       "cursor.ai.fileAccess": "workspace",
       "cursor.ai.confirmFileReads": false,
-      "cursor.ai.confirmFileWrites": false,
+      "cursor.ai.confirmFileWrites": false
     },
     "peacock.color": "#dd0531",
   },
